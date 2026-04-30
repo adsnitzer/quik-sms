@@ -26,13 +26,7 @@ jobs:
         with:
           accept-android-sdk-licenses: true
 
-      - name: Switch to JDK 11 (for older Gradle/AGP if needed)
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: "11"
-          cache: gradle
-
+     
       - name: Build debug APK
         run: ./gradlew --no-daemon assembleDebug
 
