@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0     # fetch full history
           fetch-tags: true   # ensure tags are fetched
-          ref: v4.0.11
+          ref: eeea87490dc08e0e55fcb82b3dcf6ff8be44cff2
 
       - name: Set up JDK
         uses: actions/setup-java@v4
