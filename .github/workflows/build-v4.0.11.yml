@@ -7,9 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout v4.0.11
+
+      - name: Checkout (with tags)
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0     # fetch full history
+          fetch-tags: true   # ensure tags are fetched
           ref: v4.0.11
 
       - name: Set up JDK
